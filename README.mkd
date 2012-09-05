@@ -1,0 +1,17 @@
+## About
+
+This Gem provides some analytics about Redu's data. It's in aplha mode and can't be used in production yet.
+
+![](https://dl.dropbox.com/u/77225/Screen%20Shot%202012-09-05%20at%209.53.55%20AM.png)
+
+## Usage
+
+There are [four](http://0.0.0.0:3000/analytics/environment_by_date) [visualizations](http://0.0.0.0:3000/analytics/course_by_date) [available](http://0.0.0.0:3000/analytics/post_by_date) [now](http://0.0.0.0:3000/analytics/signup_by_date). Just ``bundle install`` redu from the [dashboard](https://github.com/redu/redu/tree/dashboard) branch and run the server.
+
+## Contributing
+
+Everyone is free to contribute. Don't know where to start? Here is a list of what is on our roadmap:
+
+* Restrict access (maybe a group of users)
+* Enable caching
+* Remove code replication inside ReduAnalytics::Analytics
