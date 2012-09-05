@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["guiocavalcanti@gmail.com"]
   s.homepage    = ""
   s.summary     = "Redu related analytics"
-  s.description = %q{TODO: Write a gem description}
+  s.description = "This gem generates some graphs that show Redu's entities usage"
 
   s.rubyforge_project = "redu_analytics"
 
