@@ -15,3 +15,4 @@ Everyone is free to contribute. Don't know where to start? Here is a list of wha
 * Restrict access (maybe a group of users)
 * Enable caching
 * Remove code replication inside ReduAnalytics::Analytics
+* Write some tests
