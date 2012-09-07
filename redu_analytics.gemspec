@@ -5,9 +5,9 @@ require "redu_analytics/version"
 Gem::Specification.new do |s|
   s.name        = "redu_analytics"
   s.version     = ReduAnalytics::VERSION
-  s.authors     = ["Guilherme Cavalcanti"]
-  s.email       = ["guiocavalcanti@gmail.com"]
-  s.homepage    = ""
+  s.authors     = ["Guilherme Cavalcanti", "Juliana Lucena"]
+  s.email       = ["guiocavalcanti@gmail.com", "julianalucenaa@gmail.com"]
+  s.homepage    = "http://github.com/redu/analytics"
   s.summary     = "Redu related analytics"
   s.description = "This gem generates some graphs that show Redu's entities usage"
 
