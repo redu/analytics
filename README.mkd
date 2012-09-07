@@ -4,6 +4,16 @@ This Gem provides some analytics about Redu's data. It's in aplha mode and can't
 
 ![](https://dl.dropbox.com/u/77225/Screen%20Shot%202012-09-05%20at%209.53.55%20AM.png)
 
+## Configuration
+If you wanna require an authentication to see the analytics you should enable it and change the username and password (default to 'admin').
+
+Easy as a pie:
+```ruby
+ReduAnalytics::BasicAuthentication.enabled = true
+ReduAnalytics::BasicAuthentication.username = 'Winston Smith'
+ReduAnalytics::BasicAuthentication.password = 'wearebeingcontrolled'
+```
+
 ## Usage
 
 There are [four](http://0.0.0.0:3000/analytics/environment_by_date) [visualizations](http://0.0.0.0:3000/analytics/course_by_date) [available](http://0.0.0.0:3000/analytics/post_by_date) [now](http://0.0.0.0:3000/analytics/signup_by_date). Just ``bundle install`` redu from the [dashboard](https://github.com/redu/redu/tree/dashboard) branch and run the server.
@@ -12,7 +22,7 @@ There are [four](http://0.0.0.0:3000/analytics/environment_by_date) [visualizati
 
 Everyone is free to contribute. Don't know where to start? Here is a list of what is on our roadmap:
 
-* Restrict access (maybe a group of users)
 * Enable caching
-* Remove code replication inside ReduAnalytics::Analytics
 * Write some tests
+* Remove code replication inside ReduAnalytics::Analytics
+* More sophisticated access restriction

@@ -4,6 +4,10 @@ module ReduAnalytics
   module ControllerAdditions
     extend ActiveSupport::Concern
 
+    included do
+      before_filter :authenticate if ReduAnalytics::BasicAuthentication.enabled
+    end
+
     def dashboard
       respond_to do |format|
         format.html { render :layout => 'clean' }
@@ -80,5 +84,11 @@ module ReduAnalytics
 
     end
 
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == ReduAnalytics::BasicAuthentication.username &&
+          password == ReduAnalytics::BasicAuthentication.password
+      end
+    end
   end
 end
