@@ -16,7 +16,7 @@ ReduAnalytics::BasicAuthentication.password = 'wearebeingcontrolled'
 
 ## Usage
 
-There are [four](http://0.0.0.0:3000/analytics/environment_by_date) [visualizations](http://0.0.0.0:3000/analytics/course_by_date) [available](http://0.0.0.0:3000/analytics/post_by_date) [now](http://0.0.0.0:3000/analytics/signup_by_date). Just ``bundle install`` redu from the [dashboard](https://github.com/redu/redu/tree/dashboard) branch and run the server.
+There are [four](http://redu.com.br/analytics/environment_by_date) [visualizations](http://redu.com.br/analytics/course_by_date) [available](http://redu.com.br/analytics/post_by_date) [now](http://redu.com.br/analytics/signup_by_date). Just ``bundle install`` redu from the [dashboard](https://github.com/redu/redu/tree/dashboard) branch and run the server.
 
 ## Contributing
 
