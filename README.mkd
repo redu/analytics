@@ -27,5 +27,7 @@ Everyone is free to contribute. Don't know where to start? Here is a list of wha
 * Write some tests
 * Define the views inside the gem
 * Remove code replication inside ReduAnalytics::Analytics
+* Make ReduAnalytics::Analytics model agnostic
 * More sophisticated access restriction
 * Add instructions about how to contribute
+
