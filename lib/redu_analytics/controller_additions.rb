@@ -18,7 +18,7 @@ module ReduAnalytics
       startd = Date.new(2011,02,05)
       endd = Date.today
 
-      @by_signup = ReduAnalytics::Analytics.signup_count_by_date(startd, endd)
+      @by_signup = ReduAnalytics::Analytics.count_by_date(User, startd, endd)
       @graph = plot("cadastro por dia", "cadastros", @by_signup)
 
       respond_to  do |format|
@@ -30,7 +30,7 @@ module ReduAnalytics
       startd = Date.new(2011,02,05)
       endd = Date.today
 
-      @data = ReduAnalytics::Analytics.environment_count_by_date(startd, endd)
+      @data = ReduAnalytics::Analytics.count_by_date(Environment, startd, endd)
       @graph = plot("criação de AVA por dia", "número de AVAs", @data)
 
       respond_to  do |format|
@@ -42,7 +42,7 @@ module ReduAnalytics
       startd = Date.new(2011,02,05)
       endd = Date.today
 
-      @data = ReduAnalytics::Analytics.course_count_by_date(startd, endd)
+      @data = ReduAnalytics::Analytics.count_by_date(Course, startd, endd)
       @graph = plot("criação de Cursos por dia", "número de cursos", @data)
 
       respond_to  do |format|
@@ -54,7 +54,7 @@ module ReduAnalytics
       startd = Date.new(2011,02,05)
       endd = Date.today
 
-      @data = ReduAnalytics::Analytics.post_count_by_date(startd, endd)
+      @data = ReduAnalytics::Analytics.count_by_date(Status, startd, endd)
       @graph = plot("Postagens  por dia", "número de posts", @data)
 
       respond_to  do |format|
