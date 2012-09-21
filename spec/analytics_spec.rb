@@ -1,9 +1,10 @@
 require 'spec_helper'
+require 'ruby-debug'
 
 module ReduAnalytics
   describe 'Analytics' do
     before do
-      class MyObject < ActiveRecord::Base
+      class ::MyObject < ActiveRecord::Base
       end
     end
 
@@ -23,10 +24,8 @@ module ReduAnalytics
       end
 
       it "should return the data in the correct form" do
-        MyObject.create
-        MyObject.create
-        MyObject.create
-        analytics = Analytics.count_by_date(MyObject, Date.today, Date.today)
+        3.times { MyObject.create }
+        analytics = Analytics.count_my_object_by_date(Date.today, Date.today)
         analytics.should == @result
       end
     end

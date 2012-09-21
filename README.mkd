@@ -24,10 +24,6 @@ Everyone is free to contribute. Don't know where to start? Here is a list of wha
 
 * Host this gem at [Gem in a Box](https://github.com/cwninja/geminabox) (deployed in a Heroku server) instead of [Gemfury](http://www.gemfury.com/)
 * Enable caching
-* Write some tests
 * Define the views inside the gem
-* Remove code replication inside ReduAnalytics::Analytics
-* Make ReduAnalytics::Analytics model agnostic
 * More sophisticated access restriction
 * Add instructions about how to contribute
-

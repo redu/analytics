@@ -17,27 +17,27 @@ module ReduAnalytics
       by_user.sum / by_user.length.to_f
     end
 
-    # rsult = environment_mean_by_user
-
     def self.course_mean_by_user
       by_user = User.select("id").collect { |u| u.courses_owned.count }
       by_user.sum / by_user.length.to_f
     end
-
-    # result = course_mean_by_user
 
     def self.members_mean_by_course
       members_by_course = Course.select("id").collect { |u| u.users.count }
       members_by_course.sum / members_by_course.length.to_f
     end
 
-    # result = members_mean_by_course
-
     def self.members_mean_by_environment
       members_by_environment = Environment.select("id").collect { |u| u.users.count }
       members_by_environment.sum / members_by_environment.length.to_f
     end
 
-    # result = members_mean_by_environment
+    def self.method_missing(name, *args, &block)
+      if name.to_s =~ /^count_(\w+)_by_date$/
+        count_by_date($1.camelize.constantize, *args)
+      else
+        raise NoMethodError
+      end
+    end
   end
 end
