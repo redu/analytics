@@ -14,7 +14,7 @@ module ReduAnalytics
     end
 
     it "should count my_objects by date" do
-      a = Analytics.count_by_date(MyObject, Date.today, Date.today)
+      a = Analytics.count_by_date(MyObject.all, Date.today, Date.today)
       a.should be_a Array
     end
 

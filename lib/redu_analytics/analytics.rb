@@ -34,7 +34,7 @@ module ReduAnalytics
 
     def self.method_missing(name, *args, &block)
       if name.to_s =~ /^count_(\w+)_by_date$/
-        count_by_date($1.camelize.constantize, *args)
+        count_by_date($1.camelize.constantize.all, *args)
       else
         raise NoMethodError
       end
