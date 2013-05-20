@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ReduAnalytics
   class Railtie < Rails::Railtie
     initializer :add_routing_paths do |app|

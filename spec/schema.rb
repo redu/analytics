@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveRecord::Schema.define(:version => 0) do
   begin
     drop_table :my_objects

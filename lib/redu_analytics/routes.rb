@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Rails.application.routes.draw do
   match '/analytics/dashboard', :to => 'analytics_dashboard#dashboard'
   match '/analytics/signup_by_date', :to => 'analytics_dashboard#signup_by_date'

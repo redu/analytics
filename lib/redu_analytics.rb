@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "redu_analytics/version"
 
 module ReduAnalytics

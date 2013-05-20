@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ReduAnalytics
   class Analytics
     def self.count_by_date(klass, start_date=1.year.ago.to_date, end_date=Date.today)
